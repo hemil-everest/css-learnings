@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Box Sizing: Parent & Child</title>
+  <style>
+    .parent {
+      width: 300px;
+      padding: 10px;
+      border: 5px solid #333;
+      background-color: lightgray;
+      margin-bottom: 30px;
+    }
+
+    .child-content-box {
+      width: 100%;
+      height: 50px;
+      padding: 20px;
+      border: 5px solid red;
+      background-color: lightblue;
+      box-sizing: content-box;
+    }
+
+    .child-border-box {
+      width: 100%;
+      height: 50px;
+      padding: 20px;
+      border: 5px solid green;
+      background-color: lightgreen;
+      box-sizing: border-box;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="parent">
+    <div class="child-content-box">
+      content-box child
+    </div>
+    <div class="child-border-box">
+      border-box child
+    </div>
+  </div>
+
+</body>
+</html>

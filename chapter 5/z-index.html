@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>z-index Small Demo</title>
+  <style>
+    .box1, .box2 {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 50px;
+      left: 50px;
+    }
+
+    .box1 {
+      background-color: red;
+      z-index: 0;
+      position: relative;
+      left:1px
+    }
+
+    .box2 {
+      background-color: blue;
+      left: 80px;
+      z-index:0px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box1"></div>
+  <div class="box2"></div>
+</body>
+</html>
